@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "ai": "^3.2.19",
     "axios": "^1.7.2",
     "bcrypt": "^5.1.1",
     "bcryptjs": "^2.4.3",
@@ -22,6 +23,8 @@
     "express-handlebars": "^7.1.3",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.4.5",
+    "open": "^10.1.0",
+    "openai": "^4.52.4",
     "passport": "^0.7.0",
     "passport-jwt": "^4.0.1",
     "passport-local": "^1.0.0",

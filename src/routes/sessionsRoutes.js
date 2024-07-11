@@ -10,7 +10,7 @@ const router = express.Router();
 
 
 router.post('/registro', passport.authenticate("registro", {session: false, failureRedirect:"/api/sessions/errorRegistro"}) , async(req,res)=>{
-    console.log("soy un req.user:",req.user); // cuando es exitoso el registro passport deja un req.user
+    console.log("soy un req.user:",req.user); // asi cuando es exitoso el registro passport deja un req.user
     return res.redirect(`/registro?mensaje=Registro exitoso para ${req.user.nombre}`)
 })
                 
@@ -40,8 +40,8 @@ router.get("/errorLogin", (req, res)=>{
 })
 
 router.get('/logout',(req,res)=>{
-    res.clearCookie('coderCookie'); // Elimina la cookie que contiene el token
-    return res.redirect('/login'); // Redirige al usuario a la página de inicio de sesión
+    res.clearCookie('coderCookie');
+    return res.redirect('/login'); 
 });
 
 export default router;

@@ -7,7 +7,7 @@ import { engine } from 'express-handlebars';
 import Handlebars from 'handlebars';
 import cookieParser from "cookie-parser";
 import weatherRoutes from './routes/weatherRoutes.js';
-import sportsRoutes from './routes/sportsRoutes.js';
+import sportsRoutes from './routes/footballRoutes.js';
 import viewsRoutes from './routes/viewsRoutes.js';
 import sessionsRoutes from './routes/sessionsRoutes.js';
 import { SECRET } from './utils/utilsLogin.js';
@@ -24,10 +24,11 @@ const io = new Server(httpServer, {
 });
 connectDB()
 
-// Middleware
+// Midd
 app.use(cors());
 app.use(bodyParser.json());
 app.use(express.static('public'));
+app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser(SECRET))
 
 initPassport()

@@ -1,0 +1,17 @@
+{
+  "Spain": [
+    { "team": "Real Madrid", "points": 78 },
+    { "team": "Barcelona", "points": 77 },
+    { "team": "Atlético Madrid", "points": 70 }
+  ],
+  "Argentina": [
+    { "team": "Boca Juniors", "points": 48 },
+    { "team": "River Plate", "points": 45 },
+    { "team": "Racing Club", "points": 43 }
+  ],
+  "Uruguay": [
+    { "team": "Nacional", "points": 52 },
+    { "team": "Peñarol", "points": 50 },
+    { "team": "Defensor Sporting", "points": 48 }
+  ]
+}

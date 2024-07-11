@@ -1,4 +1,3 @@
-import sportsService from '../services/sportsService.js';
 import { formatResponse } from '../utils/responseFormatter.js';
 
 export const getLeagueStandings = async (req, res) => {
